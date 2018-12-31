@@ -1,0 +1,16 @@
+.end-section-button {
+	margin: 10px 0;
+}
+
+.todo-list li > * {
+	margin: 0 5px;
+}
+
+.preview-section {
+	background: #f4f4f4;
+}
+
+.template-preview {
+	height: 300px;
+	width: 400px;
+}
