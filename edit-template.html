@@ -125,7 +125,7 @@
                     <!-- /.box-body -->
                   </div>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-3 connectedSortable ui-sortable">
                   <div class="box box-solid">
                     <div class="box-header">
                       <i class="fa fa-files-o"></i>
@@ -139,56 +139,7 @@
                       <div>
                         <!-- See dist/js/pages/dashboard.js to activate the todoList plugin -->
                         <ul class="todo-list">
-                          <li layoutType="image"  class="layout-item">
-                            <!-- drag handle -->
-                            <span class="handle">
-                            <i class="fa fa-reorder"></i>
-                            </span>
-                            <!-- eye icon for visibility-->
-                            <i class="fa fa-eye"></i>
-                            <!--lyout image-->
-                            <span class="product-img">
-                            <img src="../../dist/img/default-50x50.gif" alt="Product Image">
-                            </span>
-                            <span class="text">image-stam.png</span>
-                            <!-- General tools such as edit or delete-->
-                            <div class="tools">
-                              <i class="fa fa-trash-o"></i>
-                            </div>
-                          </li>
-                          <li layoutType="image"  class="layout-item active-layout">
-                            <!-- drag handle -->
-                            <span class="handle">
-                            <i class="fa fa-reorder"></i>
-                            </span>
-                            <!-- eye icon for visibility-->
-                            <i class="fa fa-eye"></i>
-                            <!--lyout image-->
-                            <span class="product-img">
-                            <img src="../../dist/img/default-50x50.gif" alt="Product Image">
-                            </span>
-                            <span class="text">default-50x50.gif</span>
-                            <!-- General tools such as edit or delete-->
-                            <div class="tools">
-                              <i class="fa fa-trash-o"></i>
-                            </div>
-                          </li>
-                          <li layoutType="text" class="layout-item">
-                            <!-- drag handle -->
-                            <span class="handle">
-                            <i class="fa fa-reorder"></i>
-                            </span>
-                            <!-- eye icon for visibility-->
-                            <i class="fa fa-eye"></i>
-                            <!--lyout image-->
-                            <i class="fa fa-font"></i>
-                            <span class="text">This is the text</span>
-                            <!-- General tools such as edit or delete-->
-                            <div class="tools">
-                              <i class="fa fa-trash-o"></i>
-                            </div>
-                          </li>
-                          <li layoutType="shape" class="layout-item">
+                            <li layoutType="image"  class="layout-item">
                               <!-- drag handle -->
                               <span class="handle">
                               <i class="fa fa-reorder"></i>
@@ -196,14 +147,67 @@
                               <!-- eye icon for visibility-->
                               <i class="fa fa-eye"></i>
                               <!--lyout image-->
-                              <i class="fa fa-cubes"></i>
-                              <span class="shape"></span>
+                              <span class="product-img">
+                              <img src="../../dist/img/default-50x50.gif" alt="Product Image">
+                              </span>
+                              
                               <!-- General tools such as edit or delete-->
                               <div class="tools">
                                 <i class="fa fa-trash-o"></i>
                               </div>
+                              <div class="text">image-stam.png</div>
                             </li>
-                        </ul>
+                            <li layoutType="image"  class="layout-item active-layout">
+                              <!-- drag handle -->
+                              <span class="handle">
+                              <i class="fa fa-reorder"></i>
+                              </span>
+                              <!-- eye icon for visibility-->
+                              <i class="fa fa-eye"></i>
+                              <!--lyout image-->
+                              <span class="product-img">
+                              <img src="../../dist/img/default-50x50.gif" alt="Product Image">
+                              </span>
+                              
+                              <!-- General tools such as edit or delete-->
+                              <div class="tools">
+                                <i class="fa fa-trash-o"></i>
+                              </div>
+                              <div class="text">default-50x50.gif</div>
+                            </li>
+                            <li layoutType="text" class="layout-item">
+                              <!-- drag handle -->
+                              <span class="handle">
+                              <i class="fa fa-reorder"></i>
+                              </span>
+                              <!-- eye icon for visibility-->
+                              <i class="fa fa-eye"></i>
+                              <!--lyout image-->
+                              <i class="fa fa-font"></i>
+                              
+                              <!-- General tools such as edit or delete-->
+                              <div class="tools">
+                                <i class="fa fa-trash-o"></i>
+                              </div>
+                              <div class="text">This is the text</div>
+                            </li>
+                            <li layoutType="shape" class="layout-item">
+                                <!-- drag handle -->
+                                <span class="handle">
+                                <i class="fa fa-reorder"></i>
+                                </span>
+                                <!-- eye icon for visibility-->
+                                <i class="fa fa-eye"></i>
+                                <!--lyout image-->
+                                <i class="fa fa-cubes"></i>
+                                
+                                <!-- General tools such as edit or delete-->
+                                <div class="tools">
+                                  <i class="fa fa-trash-o"></i>
+                                </div>
+                                <div class="shape"></div>
+                              </li>
+                          </ul>
                       </div>
                     </div>
                     <div class="box-footer clearfix">
@@ -521,9 +525,7 @@
                   </div>
                 </div>
                 <div class="col-md-9">
-                  <div class="">
-                    <div class="template-preview shadow"></div>
-                  </div>
+                  <div class="template-preview shadow"></div>
                 </div>
               </div>
             </div>

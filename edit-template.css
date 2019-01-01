@@ -5,7 +5,9 @@
 .todo-list li > * {
 	margin: 0 5px;
 }
-
+.todo-list .product-img img {
+	height: 30px;
+}
 .preview-section {
 	background-color:#269;
 	background-image: linear-gradient(white 2px, transparent 2px),
@@ -47,12 +49,20 @@
 	padding-bottom: 10px;
 }
 
+.layout-properties .product-img img {
+	height: 80px;
+}
+
 .shape {
 	display: -webkit-inline-box;
     vertical-align: middle;
     width: 0;
     height: 0;
-    border-left: 20px solid transparent;
-    border-right: 20px solid transparent;
-    border-bottom: 40px solid #9d9c9c;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-bottom: 30px solid #9d9c9c;
+}
+
+.slider.slider-horizontal {
+	width: 90% !important;
 }
