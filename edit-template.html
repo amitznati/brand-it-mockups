@@ -6,27 +6,24 @@
   <title>AdminLTE 2 | Dashboard</title>
   <!-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
-  <!-- Bootstrap 3.3.7 -->
-  <link rel="stylesheet" href="../../bower_components/bootstrap/dist/css/bootstrap.min.css">
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="../../bower_components/font-awesome/css/font-awesome.min.css">
-  <!-- Ionicons -->
-  <link rel="stylesheet" href="../../bower_components/Ionicons/css/ionicons.min.css">
-  <!-- Theme style -->
-  <link rel="stylesheet" href="../../dist/css/AdminLTE.min.css">
-  <!-- AdminLTE Skins. Choose a skin from the css/skins
-       folder instead of downloading all of them to reduce the load. -->
-  <link rel="stylesheet" href="../../dist/css/skins/_all-skins.min.css">
-  <!-- Morris chart -->
-  <link rel="stylesheet" href="../../bower_components/morris.js/morris.css">
-  <!-- jvectormap -->
-  <link rel="stylesheet" href="../../bower_components/jvectormap/jquery-jvectormap.css">
-  <!-- Date Picker -->
-  <link rel="stylesheet" href="../../bower_components/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css">
-  <!-- Daterange picker -->
-  <link rel="stylesheet" href="../../bower_components/bootstrap-daterangepicker/daterangepicker.css">
-  <!-- bootstrap wysihtml5 - text editor -->
-  <link rel="stylesheet" href="../../plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css">
+  
+   <!-- Bootstrap 3.3.7 -->
+   <link rel="stylesheet" href="../../bower_components/bootstrap/dist/css/bootstrap.min.css">
+   <!-- Font Awesome -->
+   <link rel="stylesheet" href="../../bower_components/font-awesome/css/font-awesome.min.css">
+   <!-- Ionicons -->
+   <link rel="stylesheet" href="../../bower_components/Ionicons/css/ionicons.min.css">
+   <!-- bootstrap slider -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/10.4.2/css/bootstrap-slider.min.css">
+   <!-- Theme style -->
+   <link rel="stylesheet" href="../../dist/css/AdminLTE.min.css">
+   <!-- AdminLTE Skins. Choose a skin from the css/skins
+        folder instead of downloading all of them to reduce the load. -->
+   <link rel="stylesheet" href="../../dist/css/skins/_all-skins.min.css">
+  <!-- Select2 -->
+  <link rel="stylesheet" href="../../bower_components/select2/dist/css/select2.min.css">
+  <!-- Bootstrap Color Picker -->
+  <link rel="stylesheet" href="../../bower_components/bootstrap-colorpicker/dist/css/bootstrap-colorpicker.min.css">
 
   <link rel="stylesheet" href="edit-template.css">
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -63,29 +60,101 @@
           <div class="box box-primary">
             <div class="box-header">
               <i class="ion ion-clipboard"></i>
-
               <h3 class="box-title">Edit Template</h3>
             </div>
             <!-- /.box-header -->
             <div class="box-body">
               <div class="row">
                 <div class="col-sm-12">
-                  <section id="edit-template-upper-content">
-                      <h4 class="page-header">upper section</h4>
-                  </section>
+                    <div class="box box-solid">
+                        <div class="box-header">
+                          <i class="fa fa-list"></i>
+            
+                          <h3 class="box-title">Template Properties</h3>
+            
+                          <div class="box-tools pull-right">
+                            <button type="button" class="btn bg-aqua btn-sm" data-widget="collapse"><i class="fa fa-minus"></i>
+                            </button>
+                          </div>
+                        </div>
+                        <div class="box-body border-radius-none">
+                            <div class="row">
+                                <div class="col-md-3">   
+                                   <div class="form-group">
+                                     <label for="inputEmail3" class="control-label">Template Name</label>
+                                     <input type="email" class="form-control" id="inputEmail3" placeholder="name">
+                                   </div>
+                                   <div class="form-group">
+                                       <label>Unit</label>
+                                       <select class="form-control">
+                                         <option>cm</option>
+                                         <option>px</option>
+                                       </select>
+                                     </div>
+                                 </div>
+                                 <div class="col-md-3">
+                                     <div class="form-group">
+                                       <label for="inputWidth" class="control-label">Width</label>
+                                       <div>
+                                           <input id="inputWidth" type="text" value="" class="slider form-control" data-slider-min="0" data-slider-max="200"
+                                           data-slider-step="5" data-slider-value="100"
+                                           data-slider-selection="before" data-slider-tooltip="show" data-slider-id="purple">
+                                       </div>
+                           
+                                     </div>
+                                     <div class="form-group">
+                                       <label>Height</label>
+                                       <div>
+                                           <input type="text" value="" class="slider form-control" data-slider-min="0" data-slider-max="200"
+                                           data-slider-step="5" data-slider-value="100"
+                                           data-slider-selection="before" data-slider-tooltip="show" data-slider-id="purple">
+                                       </div>
+                                       
+                                     </div>
+                                 </div>
+                                 <div class="col-md-3">
+                                     <div class="form-group">
+                                         <label>For Item</label>
+                                         <select class="form-control">
+                                           <option>cop</option>
+                                           <option>other item</option>
+                                         </select>
+                                       </div>
+                                     <div class="form-group">
+                                         <label>tags</label>
+                                         <select class="form-control select2" multiple="multiple" data-placeholder="Select Unit"
+                                                 style="width: 100%;">
+                                           <option>clasic</option>
+                                           <option>modern</option>
+                                         </select>
+                                       </div>
+                                 </div>
+                               </div>
+                        </div>
+                        <!-- /.box-body -->
+                      </div>
                 </div>
                 <div class="col-md-3">
-                  <section>
-                      <h4 class="page-header">Layouts</h4>
+                  <div class="box box-solid">
+                    <div class="box-header">
+                      <i class="fa fa-files-o"></i>
+        
+                      <h3 class="box-title">Layouts</h3>
+        
+                      <div class="box-tools pull-right">
+                        <button type="button" class="btn bg-aqua btn-sm" data-widget="collapse"><i class="fa fa-minus"></i>
+                        </button>
+                      </div>
+                    </div>
+                    <div class="box-body border-radius-none">
                       <div>
                         <!-- See dist/js/pages/dashboard.js to activate the todoList plugin -->
                         <ul class="todo-list">
-                            <li>
+                            <li layoutType="image"  class="layout-item">
                               
                                   <!-- drag handle -->
                                   <span class="handle">
-                                      <i class="fa fa-ellipsis-v"></i>
-                                      <i class="fa fa-ellipsis-v"></i>
+                                      <i class="fa fa-th"></i>
                                   </span>
                               
                               
@@ -109,12 +178,11 @@
                                 <i class="fa fa-trash-o"></i>
                               </div>
                             </li>
-                            <li>
+                            <li layoutType="image"  class="layout-item active-layout">
                               
                                 <!-- drag handle -->
                                 <span class="handle">
-                                    <i class="fa fa-ellipsis-v"></i>
-                                    <i class="fa fa-ellipsis-v"></i>
+                                    <i class="fa fa-th"></i>
                                 </span>
                             
                             
@@ -138,12 +206,11 @@
                               <i class="fa fa-trash-o"></i>
                             </div>
                           </li>
-                          <li>
+                          <li layoutType="text" class="layout-item">
                               
                               <!-- drag handle -->
                               <span class="handle">
-                                  <i class="fa fa-ellipsis-v"></i>
-                                  <i class="fa fa-ellipsis-v"></i>
+                                  <i class="fa fa-th"></i>
                               </span>
                           
                           
@@ -165,26 +232,246 @@
                           </div>
                         </li>
                           </ul>
-                          <div class="end-section-button">
-                              <button type="button" class="btn btn-default pull-right"><i class="fa fa-plus"></i> Add item</button>
-                          </div>
                       </div>
-                    
-                  </section>
-                  
-                </div>
-                <div class="col-md-9">
-                  <div class="preview-section">
-                    <div class="template-preview"></div>
+                    </div>
+                    <div class="box-footer clearfix">
+                        <button type="button" class="pull-right btn btn-default" >Add Item
+                          <i class="fa fa-plus"></i></button>
+                    </div>
                   </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="">
+                    <div class="template-preview shadow"></div>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="box box-solid">
+                        <div class="box-header">
+                          <i class="fa fa-cogs"></i>
+            
+                          <h3 class="box-title">Layout Options</h3>
+            
+                          <div class="box-tools pull-right">
+                            <button type="button" class="btn bg-aqua btn-sm" data-widget="collapse"><i class="fa fa-minus"></i>
+                            </button>
+                          </div>
+                        </div>
+                        <div class="box-body border-radius-none">
+                          <div id="image-layout-properties">
+                            <div>
+                              <!--lyout image-->
+                              
+                              <span class="product-img">
+                                  <img src="../../dist/img/default-50x50.gif" alt="Product Image">
+                              </span>
+                              <span class="text">default-50x50.gif</span>
+                            </div>
+                            <div class="form-group">
+                              <label for="inputWidth" class="control-label">Width</label>
+                              <div>
+                                  <input id="inputWidth" type="text" value="" class="slider form-control" data-slider-min="0" data-slider-max="200"
+                                  data-slider-step="5" data-slider-value="100"
+                                  data-slider-selection="before" data-slider-tooltip="show" data-slider-id="purple">
+                              </div>
+                  
+                            </div>
+                            <div class="form-group">
+                              <label>Height</label>
+                              <div>
+                                  <input type="text" value="" class="slider form-control" data-slider-min="0" data-slider-max="200"
+                                  data-slider-step="5" data-slider-value="100"
+                                  data-slider-selection="before" data-slider-tooltip="show" data-slider-id="purple">
+                              </div>
+                              
+                            </div>
+                            <div class="form-group">
+                                <label for="inputWidth" class="control-label">X</label>
+                                <div>
+                                    <input id="inputWidth" type="text" value="" class="slider form-control" data-slider-min="0" data-slider-max="200"
+                                    data-slider-step="5" data-slider-value="100"
+                                    data-slider-selection="before" data-slider-tooltip="show" data-slider-id="purple">
+                                </div>
+                    
+                              </div>
+                              <div class="form-group">
+                                <label>Y</label>
+                                <div>
+                                    <input type="text" value="" class="slider form-control" data-slider-min="0" data-slider-max="200"
+                                    data-slider-step="5" data-slider-value="100"
+                                    data-slider-selection="before" data-slider-tooltip="show" data-slider-id="purple">
+                                </div>
+                                
+                              </div>
+                              <div class="form-group">
+                                <label>Image Theme id</label>
+                                <div class="radio">
+                                    <label>
+                                      <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked="">
+                                      background
+                                    </label>
+                                  </div>
+                                  <div class="radio">
+                                    <label>
+                                      <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+                                      left-up-corner
+                                    </label>
+                                  </div>
+                                  <div class="radio">
+                                    <label>
+                                      <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3" >
+                                      left-bottom-corner
+                                    </label>
+                                  </div>
+                                  <div class="radio">
+                                    <label>
+                                      <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+                                      right-up-corner
+                                    </label>
+                                  </div>
+                                  <div class="radio">
+                                    <label>
+                                      <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3" disabled="">
+                                      right-bottom-corner
+                                    </label>
+                                  </div>
+                              </div>
+                              <div class="form-group">
+                                  <label>Override Color</label>
+                                  <div class="radio">
+                                      <label>
+                                        <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked="">
+                                        none
+                                      </label>
+                                    </div>
+                                  <div class="radio">
+                                      <label>
+                                        <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked="">
+                                        <div class="input-group my-colorpicker2">
+                                            <input type="text" class="form-control">
+                          
+                                            <div class="input-group-addon">
+                                              <i></i>
+                                            </div>
+                                          </div>
+                                      </label>
+                                    </div>
+                                    <div class="radio">
+                                      <label>
+                                        <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+                                        pallet-main
+                                      </label>
+                                    </div>
+                                    <div class="radio">
+                                      <label>
+                                        <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3" >
+                                        pallet-secondery
+                                      </label>
+                                    </div>
+                                    <div class="radio">
+                                      <label>
+                                        <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+                                        pallete-third
+                                      </label>
+                                    </div>
+                                </div>
+                          </div>
+                          <div id="text-layout-properties">
+                            <div class="form-group">
+                              <div class="input-group">
+                                  <span class="input-group-addon">Text</span>
+                                  <input type="text" class="form-control" placeholder="text here">
+                                </div>
+                            </div>
+                            <div class="input-group">
+                                <span class="input-group-addon">Size (pt)</span>
+                                <input type="number" class="form-control" step="0.1">
+                              </div>
+                              <div class="form-group">
+                                <label>X</label>
+                                <div>
+                                    <input id="inputWidth" type="text" value="" class="slider form-control" data-slider-min="0" data-slider-max="200"
+                                    data-slider-step="5" data-slider-value="100"
+                                    data-slider-selection="before" data-slider-tooltip="show" data-slider-id="purple">
+                                </div>
+                              </div>
+                              <div class="form-group">
+                                  <label>Y</label>
+                                  <div>
+                                      <input id="inputWidth" type="text" value="" class="slider form-control" data-slider-min="0" data-slider-max="200"
+                                      data-slider-step="5" data-slider-value="100"
+                                      data-slider-selection="before" data-slider-tooltip="show" data-slider-id="purple">
+                                  </div>
+                                </div>
+                              </div>
+                              <!-- Color Picker -->
+                              <div class="form-group">
+                  
+                                  <div class="input-group my-colorpicker2">
+                                      <span class="input-group-addon">Color</span>
+                                    <input type="text" class="form-control">
+                  
+                                    <div class="input-group-addon">
+                                      <i></i>
+                                    </div>
+                                  </div>
+                                  <!-- /.input group -->
+                                </div>
+                                <!-- /.form group -->
+                                <div class="form-group">
+                                  <div class="input-group">
+                                      <span class="input-group-addon">Font</span>
+                                      <input type="text" class="form-control" placeholder="text here">
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                  <label>Font Style</label>
+                                    <div class="checkbox">
+                                      <label>
+                                        <input type="checkbox">
+                                        Bold
+                                      </label>
+                                    </div>
+                  
+                                    <div class="checkbox">
+                                      <label>
+                                        <input type="checkbox">
+                                        Italic
+                                      </label>
+                                    </div>
+                  
+                                    <div class="checkbox">
+                                      <label>
+                                        <input type="checkbox">
+                                        Underline
+                                      </label>
+                                    </div>
+                                    <div class="checkbox">
+                                        <label>
+                                          <input type="checkbox" >
+                                          Line Through
+                                        </label>
+                                      </div>
+                                      <div class="checkbox">
+                                          <label>
+                                            <input type="checkbox">
+                                            Overline
+                                          </label>
+                                        </div>
+                                  </div>
+                          </div>
+                        </div>
+                      </div>
                 </div>
               </div>
               
-            </div>
-            <!-- /.box-body -->
-            <div class="box-footer clearfix no-border">
+              <!-- /.box-body -->
+            <div class="box-footer clearfix">
               <button type="button" class="btn btn-default pull-right"><i class="fa fa-save"></i> Save</button>
             </div>
+            </div>
+            
           </div>
           <!-- /.box -->
 
@@ -192,7 +479,6 @@
         <!-- /.Left col -->
       </div>
       <!-- /.row (main row) -->
-
     </section>
     <!-- /.content -->
 
@@ -200,38 +486,20 @@
 <script src="../../bower_components/jquery/dist/jquery.min.js"></script>
 <!-- jQuery UI 1.11.4 -->
 <script src="../../bower_components/jquery-ui/jquery-ui.min.js"></script>
-<!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
-<script>
-  $.widget.bridge('uibutton', $.ui.button);
-</script>
 <!-- Bootstrap 3.3.7 -->
 <script src="../../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-<!-- Morris.js charts -->
-<script src="../../bower_components/raphael/raphael.min.js"></script>
-<script src="../../bower_components/morris.js/morris.min.js"></script>
-<!-- Sparkline -->
-<script src="../../bower_components/jquery-sparkline/dist/jquery.sparkline.min.js"></script>
-<!-- jvectormap -->
-<script src="../../plugins/jvectormap/jquery-jvectormap-1.2.2.min.js"></script>
-<script src="../../plugins/jvectormap/jquery-jvectormap-world-mill-en.js"></script>
-<!-- jQuery Knob Chart -->
-<script src="../../bower_components/jquery-knob/dist/jquery.knob.min.js"></script>
-<!-- daterangepicker -->
-<script src="../../bower_components/moment/min/moment.min.js"></script>
-<script src="../../bower_components/bootstrap-daterangepicker/daterangepicker.js"></script>
-<!-- datepicker -->
-<script src="../../bower_components/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js"></script>
-<!-- Bootstrap WYSIHTML5 -->
-<script src="../../plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.min.js"></script>
-<!-- Slimscroll -->
-<script src="../../bower_components/jquery-slimscroll/jquery.slimscroll.min.js"></script>
 <!-- FastClick -->
 <script src="../../bower_components/fastclick/lib/fastclick.js"></script>
 <!-- AdminLTE App -->
 <script src="../../dist/js/adminlte.min.js"></script>
-<!-- AdminLTE dashboard demo (This is only for demo purposes) -->
-<script src="../../dist/js/pages/dashboard.js"></script>
 <!-- AdminLTE for demo purposes -->
 <script src="../../dist/js/demo.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/10.4.2/bootstrap-slider.min.js"></script>
+<!-- Select2 -->
+<script src="../../bower_components/select2/dist/js/select2.full.min.js"></script>
+<!-- bootstrap color picker -->
+<script src="../../bower_components/bootstrap-colorpicker/dist/js/bootstrap-colorpicker.min.js"></script>
+
+<script src="edit-template.js"></script>
 </body>
 </html>
