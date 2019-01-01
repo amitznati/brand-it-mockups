@@ -142,7 +142,7 @@
                           <li layoutType="image"  class="layout-item">
                             <!-- drag handle -->
                             <span class="handle">
-                            <i class="fa fa-th"></i>
+                            <i class="fa fa-reorder"></i>
                             </span>
                             <!-- eye icon for visibility-->
                             <i class="fa fa-eye"></i>
@@ -150,7 +150,7 @@
                             <span class="product-img">
                             <img src="../../dist/img/default-50x50.gif" alt="Product Image">
                             </span>
-                            <span class="text">layout 1</span>
+                            <span class="text">image-stam.png</span>
                             <!-- General tools such as edit or delete-->
                             <div class="tools">
                               <i class="fa fa-trash-o"></i>
@@ -159,7 +159,7 @@
                           <li layoutType="image"  class="layout-item active-layout">
                             <!-- drag handle -->
                             <span class="handle">
-                            <i class="fa fa-th"></i>
+                            <i class="fa fa-reorder"></i>
                             </span>
                             <!-- eye icon for visibility-->
                             <i class="fa fa-eye"></i>
@@ -167,7 +167,7 @@
                             <span class="product-img">
                             <img src="../../dist/img/default-50x50.gif" alt="Product Image">
                             </span>
-                            <span class="text">layout 2</span>
+                            <span class="text">default-50x50.gif</span>
                             <!-- General tools such as edit or delete-->
                             <div class="tools">
                               <i class="fa fa-trash-o"></i>
@@ -176,7 +176,7 @@
                           <li layoutType="text" class="layout-item">
                             <!-- drag handle -->
                             <span class="handle">
-                            <i class="fa fa-th"></i>
+                            <i class="fa fa-reorder"></i>
                             </span>
                             <!-- eye icon for visibility-->
                             <i class="fa fa-eye"></i>
@@ -188,6 +188,21 @@
                               <i class="fa fa-trash-o"></i>
                             </div>
                           </li>
+                          <li layoutType="shape" class="layout-item">
+                              <!-- drag handle -->
+                              <span class="handle">
+                              <i class="fa fa-reorder"></i>
+                              </span>
+                              <!-- eye icon for visibility-->
+                              <i class="fa fa-eye"></i>
+                              <!--lyout image-->
+                              <i class="fa fa-cubes"></i>
+                              <span class="shape"></span>
+                              <!-- General tools such as edit or delete-->
+                              <div class="tools">
+                                <i class="fa fa-trash-o"></i>
+                              </div>
+                            </li>
                         </ul>
                       </div>
                     </div>
@@ -196,14 +211,7 @@
                       <i class="fa fa-plus"></i></button>
                     </div>
                   </div>
-                </div>
-                <div class="col-md-6">
-                  <div class="">
-                    <div class="template-preview shadow"></div>
-                  </div>
-                </div>
-                <div class="col-md-3">
-                  <div class="box box-solid">
+                  <div class="box layout-properties box-solid">
                     <div class="box-header">
                       <i class="fa fa-cogs"></i>
                       <h3 class="box-title">Layout Options</h3>
@@ -214,7 +222,7 @@
                     </div>
                     <div class="box-body border-radius-none">
                       <div id="image-layout-properties">
-                        <div>
+                        <div class="form-group">
                           <!--lyout image-->
                           <span class="product-img">
                           <img src="../../dist/img/default-50x50.gif" alt="Product Image">
@@ -228,8 +236,6 @@
                               data-slider-step="5" data-slider-value="100"
                               data-slider-selection="before" data-slider-tooltip="show" data-slider-id="purple">
                           </div>
-                        </div>
-                        <div class="form-group">
                           <label>Height</label>
                           <div>
                             <input type="text" value="" class="slider form-control" data-slider-min="0" data-slider-max="200"
@@ -244,8 +250,6 @@
                               data-slider-step="5" data-slider-value="100"
                               data-slider-selection="before" data-slider-tooltip="show" data-slider-id="purple">
                           </div>
-                        </div>
-                        <div class="form-group">
                           <label>Y</label>
                           <div>
                             <input type="text" value="" class="slider form-control" data-slider-min="0" data-slider-max="200"
@@ -327,84 +331,198 @@
                       </div>
                       <div id="text-layout-properties">
                         <div class="form-group">
+                            <label>Text</label>
+                            <div class="input-group">
+                                <span class="input-group-addon">Text</span>
+                                <input type="text" class="form-control" placeholder="text here">
+                            </div>
+                            <div class="radio">
+                              <label>
+                              <input type="radio" name="optionsRadios" id="optionsRadiosText1" value="option1" checked="">
+                              Brand Name
+                              </label>
+                            </div>
+                            <div class="radio">
+                              <label>
+                              <input type="radio" name="optionsRadios" id="optionsRadiosText2" value="option2">
+                              Slogen
+                              </label>
+                            </div>
+                            <div class="radio">
+                              <label>
+                              <input type="radio" name="optionsRadios" id="optionsRadiosText3" value="option3" >
+                              Dynamic
+                              </label>
+                            </div>
+                            <div class="radio">
+                              <label>
+                              <input type="radio" name="optionsRadios" id="optionsRadiosText3" value="option3" >
+                              Static
+                              </label>
+                            </div>
+                        </div>
+                        <div class="form-group">
                           <div class="input-group">
-                            <span class="input-group-addon">Text</span>
+                            <span class="input-group-addon">Size (pt)</span>
+                            <input type="number" class="form-control" step="0.1">
+                          </div>
+                        </div>
+                        
+                        <div class="form-group">
+                          <label class="control-label">X</label>
+                          <div>
+                            <input type="text" value="" class="slider form-control" data-slider-min="0" data-slider-max="200"
+                              data-slider-step="5" data-slider-value="100"
+                              data-slider-selection="before" data-slider-tooltip="show" data-slider-id="purple">
+                          </div>
+                          <label>Y</label>
+                          <div>
+                            <input type="text" value="" class="slider form-control" data-slider-min="0" data-slider-max="200"
+                              data-slider-step="5" data-slider-value="100"
+                              data-slider-selection="before" data-slider-tooltip="show" data-slider-id="purple">
+                          </div>
+                        </div>
+                        <div class="form-group">
+                            <label>Color</label>
+                            <div class="radio">
+                              <label>
+                                <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked="">
+                                <div class="input-group my-colorpicker2">
+                                  <input type="text" class="form-control">
+                                  <div class="input-group-addon">
+                                    <i></i>
+                                  </div>
+                                </div>
+                              </label>
+                            </div>
+                            <div class="radio">
+                              <label>
+                              <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+                              pallet-main
+                              </label>
+                            </div>
+                            <div class="radio">
+                              <label>
+                              <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3" >
+                              pallet-secondery
+                              </label>
+                            </div>
+                            <div class="radio">
+                              <label>
+                              <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+                              pallete-third
+                              </label>
+                            </div>
+                          </div>
+                        <!-- /.form group -->
+                        <div class="form-group">
+                          <div class="input-group">
+                            <span class="input-group-addon">Font</span>
                             <input type="text" class="form-control" placeholder="text here">
                           </div>
                         </div>
-                        <div class="input-group">
-                          <span class="input-group-addon">Size (pt)</span>
-                          <input type="number" class="form-control" step="0.1">
+                        <div class="form-group">
+                          <label>Font Style</label>
+                          <div class="checkbox">
+                            <label>
+                            <input type="checkbox">
+                            Bold
+                            </label>
+                          </div>
+                          <div class="checkbox">
+                            <label>
+                            <input type="checkbox">
+                            Italic
+                            </label>
+                          </div>
+                          <div class="checkbox">
+                            <label>
+                            <input type="checkbox">
+                            Underline
+                            </label>
+                          </div>
+                          <div class="checkbox">
+                            <label>
+                            <input type="checkbox" >
+                            Line Through
+                            </label>
+                          </div>
+                          <div class="checkbox">
+                            <label>
+                            <input type="checkbox">
+                            Overline
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                      <div id="shape-layout-properties">
+                        <div class="form-group">
+                          <label>Shape Style</label>
+                          <textarea class="form-control" rows="3" placeholder='width: 0;
+                          height: 0;
+                          border-left: 50px solid transparent;
+                          border-right: 50px solid transparent;
+                          border-bottom: 100px solid red;' ></textarea>
                         </div>
                         <div class="form-group">
-                          <label>X</label>
+                          <label for="inputWidth" class="control-label">X</label>
                           <div>
                             <input id="inputWidth" type="text" value="" class="slider form-control" data-slider-min="0" data-slider-max="200"
                               data-slider-step="5" data-slider-value="100"
                               data-slider-selection="before" data-slider-tooltip="show" data-slider-id="purple">
                           </div>
-                        </div>
-                        <div class="form-group">
                           <label>Y</label>
                           <div>
-                            <input id="inputWidth" type="text" value="" class="slider form-control" data-slider-min="0" data-slider-max="200"
+                            <input type="text" value="" class="slider form-control" data-slider-min="0" data-slider-max="200"
                               data-slider-step="5" data-slider-value="100"
                               data-slider-selection="before" data-slider-tooltip="show" data-slider-id="purple">
                           </div>
                         </div>
-                      </div>
-                      <!-- Color Picker -->
-                      <div class="form-group">
-                        <div class="input-group my-colorpicker2">
-                          <span class="input-group-addon">Color</span>
-                          <input type="text" class="form-control">
-                          <div class="input-group-addon">
-                            <i></i>
+                        <div class="form-group">
+                          <label>Override Color</label>
+                          <div class="radio">
+                            <label>
+                            <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked="">
+                            none
+                            </label>
                           </div>
-                        </div>
-                        <!-- /.input group -->
-                      </div>
-                      <!-- /.form group -->
-                      <div class="form-group">
-                        <div class="input-group">
-                          <span class="input-group-addon">Font</span>
-                          <input type="text" class="form-control" placeholder="text here">
-                        </div>
-                      </div>
-                      <div class="form-group">
-                        <label>Font Style</label>
-                        <div class="checkbox">
-                          <label>
-                          <input type="checkbox">
-                          Bold
-                          </label>
-                        </div>
-                        <div class="checkbox">
-                          <label>
-                          <input type="checkbox">
-                          Italic
-                          </label>
-                        </div>
-                        <div class="checkbox">
-                          <label>
-                          <input type="checkbox">
-                          Underline
-                          </label>
-                        </div>
-                        <div class="checkbox">
-                          <label>
-                          <input type="checkbox" >
-                          Line Through
-                          </label>
-                        </div>
-                        <div class="checkbox">
-                          <label>
-                          <input type="checkbox">
-                          Overline
-                          </label>
+                          <div class="radio">
+                            <label>
+                              <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked="">
+                              <div class="input-group my-colorpicker2">
+                                <input type="text" class="form-control">
+                                <div class="input-group-addon">
+                                  <i></i>
+                                </div>
+                              </div>
+                            </label>
+                          </div>
+                          <div class="radio">
+                            <label>
+                            <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+                            pallet-main
+                            </label>
+                          </div>
+                          <div class="radio">
+                            <label>
+                            <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3" >
+                            pallet-secondery
+                            </label>
+                          </div>
+                          <div class="radio">
+                            <label>
+                            <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+                            pallete-third
+                            </label>
+                          </div>
                         </div>
                       </div>
                     </div>
+                  </div>
+                </div>
+                <div class="col-md-9">
+                  <div class="">
+                    <div class="template-preview shadow"></div>
                   </div>
                 </div>
               </div>

@@ -1,5 +1,5 @@
 $('#text-layout-properties').hide(); 
- 
+$('#shape-layout-properties').hide();
  // jQuery UI sortable for the todo list
   var sorted = $('.todo-list').sortable({
     placeholder         : 'sort-highlight',
@@ -20,9 +20,15 @@ $('#text-layout-properties').hide();
 	if(type == 'image') {
 		$('#text-layout-properties').hide();
 		$('#image-layout-properties').show();
+		$('#shape-layout-properties').hide();
 	} else if (type == 'text') {
 		$('#text-layout-properties').show();
 		$('#image-layout-properties').hide();
+		$('#shape-layout-properties').hide();
+	} else if (type == 'shape') {
+		$('#text-layout-properties').hide();
+		$('#image-layout-properties').hide();
+		$('#shape-layout-properties').show();
 	}
   });
 /* BOOTSTRAP SLIDER */
