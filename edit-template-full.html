@@ -7,23 +7,93 @@
     <!-- Tell the browser to be responsive to screen width -->
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
     <!-- Bootstrap 3.3.7 -->
-    <link rel="stylesheet" href="../../bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="../../bower_components/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Ionicons -->
-    <link rel="stylesheet" href="../../bower_components/Ionicons/css/ionicons.min.css">
+    <!-- <link rel="stylesheet" href="../../bower_components/Ionicons/css/ionicons.min.css"> -->
     <!-- bootstrap slider -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/10.4.2/css/bootstrap-slider.min.css">
     <!-- Theme style -->
-    <link rel="stylesheet" href="../../dist/css/AdminLTE.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/admin-lte/2.4.8/css/AdminLTE.min.css">
     <!-- AdminLTE Skins. Choose a skin from the css/skins
       folder instead of downloading all of them to reduce the load. -->
-    <link rel="stylesheet" href="../../dist/css/skins/_all-skins.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/admin-lte/2.4.8/css/skins/_all-skins.min.css">
     <!-- Select2 -->
-    <link rel="stylesheet" href="../../bower_components/select2/dist/css/select2.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.5/css/select2.min.css">
     <!-- Bootstrap Color Picker -->
-    <link rel="stylesheet" href="../../bower_components/bootstrap-colorpicker/dist/css/bootstrap-colorpicker.min.css">
-    <link rel="stylesheet" href="edit-template.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-colorpicker/2.5.3/css/bootstrap-colorpicker.css">
+    <!-- <link rel="stylesheet" href="edit-template.css"> -->
+    <style>
+      .end-section-button {
+        margin: 10px 0;
+      }
+
+      .todo-list li > * {
+        margin: 0 5px;
+      }
+      .todo-list .product-img img {
+        height: 30px;
+      }
+      .preview-section {
+        background-color:#269;
+        background-image: linear-gradient(white 2px, transparent 2px),
+        linear-gradient(90deg, white 2px, transparent 2px),
+        linear-gradient(rgba(255,255,255,.3) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,.3) 1px, transparent 1px);
+        background-size: 100px 100px, 100px 100px, 20px 20px, 20px 20px;
+        background-position:-2px -2px, -2px -2px, -1px -1px, -1px -1px;
+      }
+
+      .template-preview {
+        background: white;
+        height: 300px;
+        width: 400px;
+        
+      }
+
+      .shadow {
+        -webkit-box-shadow: 2px 2px 11px -1px rgba(0,0,0,0.75);
+        -moz-box-shadow: 2px 2px 11px -1px rgba(0,0,0,0.75);
+        box-shadow: 2px 2px 11px -1px rgba(0,0,0,0.75);
+      }
+
+      .box {
+        -webkit-box-shadow: 2px 2px 11px -1px rgba(0,0,0,0.75);
+        -moz-box-shadow: 2px 2px 11px -1px rgba(0,0,0,0.75);
+        box-shadow: 2px 2px 11px -1px rgba(0,0,0,0.75);
+      }
+      .active-layout {
+        background: rgb(175, 221, 248) !important;
+      }
+
+      .slider {
+        margin: 0 10px;
+      }
+
+      .layout-properties .form-group {
+        border-bottom: 1px solid #f4f4f4;
+        padding-bottom: 10px;
+      }
+
+      .layout-properties .product-img img {
+        height: 80px;
+      }
+
+      .shape {
+        display: -webkit-inline-box;
+          vertical-align: middle;
+          width: 0;
+          height: 0;
+          border-left: 15px solid transparent;
+          border-right: 15px solid transparent;
+          border-bottom: 30px solid #9d9c9c;
+      }
+
+      .slider.slider-horizontal {
+        width: 90% !important;
+      }
+    </style>
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -69,7 +139,7 @@
                       <li><!-- start message -->
                         <a href="#">
                           <div class="pull-left">
-                            <img src="../../dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+                            <img src="https://cdnjs.cloudflare.com/ajax/libs/admin-lte/2.4.8/img/user2-160x160.jpg" class="img-circle" alt="User Image">
                           </div>
                           <h4>
                             Support Team
@@ -82,7 +152,7 @@
                       <li>
                         <a href="#">
                           <div class="pull-left">
-                            <img src="../../dist/img/user3-128x128.jpg" class="img-circle" alt="User Image">
+                            <img src="https://cdnjs.cloudflare.com/ajax/libs/admin-lte/2.4.8/img/user3-128x128.jpg" class="img-circle" alt="User Image">
                           </div>
                           <h4>
                             AdminLTE Design Team
@@ -94,7 +164,7 @@
                       <li>
                         <a href="#">
                           <div class="pull-left">
-                            <img src="../../dist/img/user4-128x128.jpg" class="img-circle" alt="User Image">
+                            <img src="https://cdnjs.cloudflare.com/ajax/libs/admin-lte/2.4.8/img/user3-128x128.jpg" class="img-circle" alt="User Image">
                           </div>
                           <h4>
                             Developers
@@ -106,7 +176,7 @@
                       <li>
                         <a href="#">
                           <div class="pull-left">
-                            <img src="../../dist/img/user3-128x128.jpg" class="img-circle" alt="User Image">
+                            <img src="https://cdnjs.cloudflare.com/ajax/libs/admin-lte/2.4.8/img/user3-128x128.jpg" class="img-circle" alt="User Image">
                           </div>
                           <h4>
                             Sales Department
@@ -118,7 +188,7 @@
                       <li>
                         <a href="#">
                           <div class="pull-left">
-                            <img src="../../dist/img/user4-128x128.jpg" class="img-circle" alt="User Image">
+                            <img src="https://cdnjs.cloudflare.com/ajax/libs/admin-lte/2.4.8/img/user4-128x128.jpg" class="img-circle" alt="User Image">
                           </div>
                           <h4>
                             Reviewers
@@ -252,13 +322,13 @@
               <!-- User Account: style can be found in dropdown.less -->
               <li class="dropdown user user-menu">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                  <img src="../../dist/img/user2-160x160.jpg" class="user-image" alt="User Image">
+                  <img src="https://cdnjs.cloudflare.com/ajax/libs/admin-lte/2.4.8/img/user2-160x160.jpg" class="user-image" alt="User Image">
                   <span class="hidden-xs">Alexander Pierce</span>
                 </a>
                 <ul class="dropdown-menu">
                   <!-- User image -->
                   <li class="user-header">
-                    <img src="../../dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+                    <img src="https://cdnjs.cloudflare.com/ajax/libs/admin-lte/2.4.8/img/user2-160x160.jpg" class="img-circle" alt="User Image">
     
                     <p>
                       Alexander Pierce - Web Developer
@@ -306,7 +376,7 @@
           <!-- Sidebar user panel -->
           <div class="user-panel">
             <div class="pull-left image">
-              <img src="../../dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+              <img src="https://cdnjs.cloudflare.com/ajax/libs/admin-lte/2.4.8/img/user2-160x160.jpg" class="img-circle" alt="User Image">
             </div>
             <div class="pull-left info">
               <p>Alexander Pierce</p>
@@ -616,7 +686,7 @@
                                 <i class="fa fa-eye"></i>
                                 <!--lyout image-->
                                 <span class="product-img">
-                                <img src="../../dist/img/default-50x50.gif" alt="Product Image">
+                                <img src="https://wallpaperbrowse.com/media/images/soap-bubble-1958650_960_720.jpg" alt="Product Image">
                                 </span>
                                 
                                 <!-- General tools such as edit or delete-->
@@ -634,7 +704,7 @@
                                 <i class="fa fa-eye"></i>
                                 <!--lyout image-->
                                 <span class="product-img">
-                                <img src="../../dist/img/default-50x50.gif" alt="Product Image">
+                                <img src="https://wallpaperbrowse.com/media/images/soap-bubble-1958650_960_720.jpg" alt="Product Image">
                                 </span>
                                 
                                 <!-- General tools such as edit or delete-->
@@ -697,7 +767,7 @@
                             <div class="form-group">
                               <!--lyout image-->
                               <span class="product-img">
-                              <img src="../../dist/img/default-50x50.gif" alt="Product Image">
+                              <img src="https://wallpaperbrowse.com/media/images/soap-bubble-1958650_960_720.jpg" alt="Product Image">
                               </span>
                               <span class="text">default-50x50.gif</span>
                             </div>
@@ -1213,22 +1283,73 @@
     <!-- ./wrapper -->
     <!-- /.content -->
     <!-- jQuery 3 -->
-    <script src="../../bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <!-- jQuery UI 1.11.4 -->
-    <script src="../../bower_components/jquery-ui/jquery-ui.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
     <!-- Bootstrap 3.3.7 -->
-    <script src="../../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-    <!-- FastClick -->
-    <script src="../../bower_components/fastclick/lib/fastclick.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <!-- AdminLTE App -->
-    <script src="../../dist/js/adminlte.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/admin-lte/2.4.8/js/adminlte.min.js"></script>
     <!-- AdminLTE for demo purposes -->
-    <script src="../../dist/js/demo.js"></script>
+    <!-- <script src="../../dist/js/demo.js"></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/10.4.2/bootstrap-slider.min.js"></script>
     <!-- Select2 -->
-    <script src="../../bower_components/select2/dist/js/select2.full.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.5/js/select2.full.min.js"></script>
     <!-- bootstrap color picker -->
-    <script src="../../bower_components/bootstrap-colorpicker/dist/js/bootstrap-colorpicker.min.js"></script>
-    <script src="edit-template.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-colorpicker/2.5.3/js/bootstrap-colorpicker.min.js"></script>
+    <script>
+      $('#text-layout-properties').hide(); 
+$('#shape-layout-properties').hide();
+
+  // Make the dashboard widgets sortable Using jquery UI
+  $('.connectedSortable').sortable({
+    placeholder         : 'sort-highlight',
+    connectWith         : '.connectedSortable',
+    handle              : '.box-header, .nav-tabs',
+    forcePlaceholderSize: true,
+    zIndex              : 999999
+  });
+  $('.connectedSortable .box-header, .connectedSortable .nav-tabs-custom').css('cursor', 'move');
+
+ // jQuery UI sortable for the todo list
+  var sorted = $('.todo-list').sortable({
+    placeholder         : 'sort-highlight',
+    handle              : '.handle',
+    forcePlaceholderSize: true,
+    zIndex              : 999999
+  });
+  console.log(sorted);
+
+  $('.layout-item').on('click', function(e) {
+	  this.togg
+  })
+
+  $(".layout-item").click(function(){
+	  $(".layout-item").removeClass("active-layout");
+	$(this).toggleClass("active-layout");
+	var type = $(this).attr('layoutType');
+	if(type == 'image') {
+		$('#text-layout-properties').hide();
+		$('#image-layout-properties').show();
+		$('#shape-layout-properties').hide();
+	} else if (type == 'text') {
+		$('#text-layout-properties').show();
+		$('#image-layout-properties').hide();
+		$('#shape-layout-properties').hide();
+	} else if (type == 'shape') {
+		$('#text-layout-properties').hide();
+		$('#image-layout-properties').hide();
+		$('#shape-layout-properties').show();
+	}
+  });
+  /* BOOTSTRAP SLIDER */
+  $('.slider').bootstrapSlider();
+
+  //Initialize Select2 Elements
+  $('.select2').select2();
+
+  //color picker with addon
+  $('.my-colorpicker2').colorpicker();
+    </script>
   </body>
 </html>
